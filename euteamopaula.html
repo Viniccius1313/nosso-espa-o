@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> eu te amooooooo ❤️❤️❤️❤️❤️❤️❤️❤️❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== TELA 1 — DESAFIO DA SENHA ===================== -->
+  <section id="tela-senha" class="tela ativa">
+
+    <div class="corações-fundo" id="corações-fundo-1"></div>
+
+    <div class="cartao">
+      <h1 class="titulo-entrada">oi amor <span class="coracao-inline">❤️</span></h1>
+      <p class="subtitulo">
+        tenta desembaralhar a palavra ai pra voce poder entrar (é tudo junto em)
+      </p>
+
+      <p class="senha-embaralhada" id="senha-embaralhada"></p>
+
+      <form id="form-senha" autocomplete="off">
+        <input
+          type="text"
+          id="input-senha"
+          class="input-senha"
+          placeholder="Digite a palavra aqui..."
+          aria-label="Digite a senha desembaralhada"
+        >
+        <button type="submit" class="botao botao-rosa">Confirmar ❤️</button>
+      </form>
+
+      <p class="mensagem-erro" id="mensagem-erro"></p>
+
+      <button id="botao-entrar" class="botao botao-grande escondido">Clique aqui ❤️</button>
+    </div>
+  </section>
+
+  <!-- ===================== TELA 2 — SURPRESA / COMEMORAÇÃO ===================== -->
+  <section id="tela-surpresa" class="tela">
+
+    <div class="corações-fundo" id="corações-fundo-2"></div>
+    <div class="confetes" id="confetes"></div>
+
+    <!--
+      PORTA-RETRATOS NAS LATERAIS (3 à esquerda, 3 à direita)
+      Coloque as fotos na mesma pasta do index.html com estes nomes,
+      ou troque o nome/caminho em cada "src".
+    -->
+    <div class="molduras" aria-hidden="false">
+
+      <!-- Esquerda -->
+      <div class="moldura m1">
+        <div class="moldura-caixa">
+          <img src="nossa-foto.jpg" alt="Nós dois" onerror="this.parentElement.classList.add('sem-foto')">
+          <div class="moldura-placeholder">📸</div>
+        </div>
+        <span class="moldura-coracao">❤️</span>
+      </div>
+      <div class="moldura m2">
+        <div class="moldura-caixa">
+          <img src="foto-2.jpg" alt="Nós dois" onerror="this.parentElement.classList.add('sem-foto')">
+          <div class="moldura-placeholder">📸</div>
+        </div>
+        <span class="moldura-coracao">💕</span>
+      </div>
+      <div class="moldura m3">
+        <div class="moldura-caixa">
+          <img src="foto-3.jpg" alt="Nós dois" onerror="this.parentElement.classList.add('sem-foto')">
+          <div class="moldura-placeholder">📸</div>
+        </div>
+        <span class="moldura-coracao">💗</span>
+      </div>
+
+      <!-- Direita -->
+      <div class="moldura m4">
+        <div class="moldura-caixa">
+          <img src="foto-4.jpg" alt="Nós dois" onerror="this.parentElement.classList.add('sem-foto')">
+          <div class="moldura-placeholder">📸</div>
+        </div>
+        <span class="moldura-coracao">💗</span>
+      </div>
+      <div class="moldura m5">
+        <div class="moldura-caixa">
+          <img src="foto-5.jpg" alt="Nós dois" onerror="this.parentElement.classList.add('sem-foto')">
+          <div class="moldura-placeholder">📸</div>
+        </div>
+        <span class="moldura-coracao">❤️</span>
+      </div>
+      <div class="moldura m6">
+        <div class="moldura-caixa">
+          <img src="foto-6.jpg" alt="Nós dois" onerror="this.parentElement.classList.add('sem-foto')">
+          <div class="moldura-placeholder">📸</div>
+        </div>
+        <span class="moldura-coracao">💕</span>
+      </div>
+    </div>
+
+    <div class="conteudo-surpresa">
+
+      <div class="fitas" aria-hidden="true">
+        <span class="fita fita-1"></span>
+        <span class="fita fita-2"></span>
+      </div>
+
+      <h1 class="titulo-surpresa">Nosso pequeno espaço <span class="coracao-inline">❤️</span></h1>
+
+      <!-- ALTERE AQUI A DATA MOSTRADA NA TELA, SE QUISER -->
+      <p class="data-namoro">25/09/2026</p>
+
+      <!-- ===================== CONTADOR DO NOSSO AMOR ===================== -->
+      <div class="contador-caixa">
+        <p class="contador-titulo">Eu te amo há:</p>
+        <div class="contador-grid" id="contador">
+          <div class="contador-item">
+            <span class="contador-numero" id="contador-anos">0</span>
+            <span class="contador-label">anos</span>
+          </div>
+          <div class="contador-item">
+            <span class="contador-numero" id="contador-meses">0</span>
+            <span class="contador-label">meses</span>
+          </div>
+          <div class="contador-item">
+            <span class="contador-numero" id="contador-dias">0</span>
+            <span class="contador-label">dias</span>
+          </div>
+          <div class="contador-item">
+            <span class="contador-numero" id="contador-horas">0</span>
+            <span class="contador-label">horas</span>
+          </div>
+          <div class="contador-item">
+            <span class="contador-numero" id="contador-minutos">0</span>
+            <span class="contador-label">min</span>
+          </div>
+          <div class="contador-item">
+            <span class="contador-numero" id="contador-segundos">0</span>
+            <span class="contador-label">seg</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALTERE AQUI A MENSAGEM FINAL -->
+      <p class="mensagem-final">
+        <br>
+        obrigado por existir na minha vida todo esse tempo ❤️
+      </p>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
